@@ -3,16 +3,21 @@
 You can find the book with code and exercises here: https://www.amazon.com.br/dp/B09783WN58/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
 
 ## Chapter 1. Small Problems
-* [fibonacci.py](/fibonacci/fibonacci.py)
-* [trivial_compression.py](/trivial_compression/trivial_compression.py)
-* [unbreakable_encryption.py](/unbreakable_encryption.py)
+* [fibonacci.py](/chapter_01/fibonacci.py)
+* [compression.py](/chapter_01/compression.py)
+* [unbreakable_encryption.py](/chapter_01/unbreakable_encryption.py)
 
 ## Chapter 2. Search problems
+[dna_search.py](/chapter_02/dna_search.py)
+[generic_search.py](/chapter_02/generic_search.py)
+[maze.py](/chapter_02/maze.py)
+[missionaries.py](/chapter_02/missionaries.py)
+[missionaries_any_number.py](/chapter_02/missionaries_any_number.py)
 
 ## Chapter 3. Constraint-satisfaction problems
-* [map_coloring.py](/constraint_satisfaction/map_coloring.py)
-* [send_more_money.py](/constraint_satisfaction/send_more_money.py)
-* [word_search.py](/constraint_satisfaction/word_search.py)
-* [word_search_overlap.py (exercise)](/constraint_satisfaction/word_search_overlap.py)
-* [circuit_board_layout.py (exercise)](/constraint_satisfaction/circuit_board_layout.py)
-* [sudoku.py (exercise)](/constraint_satisfaction/sudoku.py)
+* [map_coloring.py](/chapter_03/map_coloring.py)
+* [send_more_money.py](/chapter_03/send_more_money.py)
+* [word_search.py](/chapter_03/word_search.py)
+* [word_search_overlap.py (exercise)](/chapter_03/word_search_overlap.py)
+* [circuit_board_layout.py (exercise)](/chapter_03/circuit_board_layout.py)
+* [sudoku.py (exercise)](/chapter_03/sudoku.py)
