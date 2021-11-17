@@ -3,7 +3,7 @@ from typing import List, Optional
 from generic_search import Node, bfs, node_to_path
 
 
-class MCState:
+class MCState(object):
     def __init__(
         self,
         missionaries: int,

@@ -7,6 +7,7 @@ from typing import Dict, List, NamedTuple, Optional, Tuple
 
 from csp import CSP, Constraint
 
+Grid = List[List[str]]
 
 def display_grid(grid: Grid) -> None:
     for row in grid:
