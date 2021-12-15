@@ -23,6 +23,7 @@ You can find the book with code and exercises here: https://www.amazon.com.br/dp
 * [sudoku.py (exercise)](/chapter_03/sudoku.py)
 
 ## Chapter 4. Graph problems
+* [digraph.py](/chapter_04/digraph.py)
 * [dijkstra.py](/chapter_04/dijkstra.py)
 * [edges.py](/chapter_04/edges.py)
 * [graph.py](/chapter_04/edges.py)
