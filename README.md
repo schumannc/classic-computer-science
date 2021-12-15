@@ -8,11 +8,11 @@ You can find the book with code and exercises here: https://www.amazon.com.br/dp
 * [unbreakable_encryption.py](/chapter_01/unbreakable_encryption.py)
 
 ## Chapter 2. Search problems
-[dna_search.py](/chapter_02/dna_search.py)
-[generic_search.py](/chapter_02/generic_search.py)
-[maze.py](/chapter_02/maze.py)
-[missionaries.py](/chapter_02/missionaries.py)
-[missionaries_any_number.py](/chapter_02/missionaries_any_number.py)
+* [dna_search.py](/chapter_02/dna_search.py)
+* [generic_search.py](/chapter_02/generic_search.py)
+* [maze.py](/chapter_02/maze.py)
+* [missionaries.py](/chapter_02/missionaries.py)
+* [missionaries_any_number.py](/chapter_02/missionaries_any_number.py)
 
 ## Chapter 3. Constraint-satisfaction problems
 * [map_coloring.py](/chapter_03/map_coloring.py)
@@ -21,3 +21,13 @@ You can find the book with code and exercises here: https://www.amazon.com.br/dp
 * [word_search_overlap.py (exercise)](/chapter_03/word_search_overlap.py)
 * [circuit_board_layout.py (exercise)](/chapter_03/circuit_board_layout.py)
 * [sudoku.py (exercise)](/chapter_03/sudoku.py)
+
+## Chapter 4. Graph problems
+* [dijkstra.py](/chapter_04/dijkstra.py)
+* [edges.py](/chapter_04/edges.py)
+* [graph.py](/chapter_04/edges.py)
+* [minimal_spanning_tree.py](/chapter_04/minimal_spanning_tree.py)
+* [test_exercises.py](/chapter_04/edges.py)
+* [weighted_edge.py](/chapter_04/weighted_edge.py)
+* [weighted_graph.py](/chapter_04/weighted_graph.py)
+* [seven_bridges_konigsberg.py](/chapter_04/seven_bridges_konigsberg.py)

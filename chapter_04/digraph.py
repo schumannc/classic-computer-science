@@ -8,7 +8,7 @@ from edge import Edge
 V = TypeVar("V")  # type of the vertices in the graph
 
 
-class Graph(Generic[V]):
+class DiGraph(Generic[V]):
     def __init__(self, vertices: List[V] = []) -> None:
         self._vertices: List[V] = vertices
         self._edges: List[List[Edge]] = [[] for _ in vertices]
@@ -31,10 +31,9 @@ class Graph(Generic[V]):
                     del self._edges[i][j]
         return index # Return index of removed vertex
 
-    # Remove edge from both directions
+    # Remove edge one direction
     def remove_edge(self, edge: Edge) -> None:
         self._edges[edge.u].remove(edge)
-        self._edges[edge.v].remove(edge.reversed())
 
     # Add a vertex to the graph and return its index
     def add_vertex(self, vertex: V) -> int:
@@ -42,11 +41,10 @@ class Graph(Generic[V]):
         self._edges.append([])  # Add empty list for containing edges
         return self.vertex_count - 1  # Return index of added vertex
 
-    # This is an undirected graph,
-    # so we always add edges in both directions
+    # This is an directed graph,
+    # so we always add edges in one directions
     def add_edge(self, edge: Edge) -> None:
         self._edges[edge.u].append(edge)
-        self._edges[edge.v].append(edge.reversed())
 
     # Add an edge using vertex indices (convenience method)
     def add_edge_by_indices(self, u: int, v: int) -> None:
