@@ -32,3 +32,11 @@ You can find the book with code and exercises here: https://www.amazon.com.br/dp
 * [weighted_edge.py](/chapter_04/weighted_edge.py)
 * [weighted_graph.py](/chapter_04/weighted_graph.py)
 * [seven_bridges_konigsberg.py](/chapter_04/seven_bridges_konigsberg.py)
+
+## Chapter 5. Genetic algorithms
+* [chromosome.py](/chapter_05/chromosome.py)
+* [genetic_algorithm_tournament.py](/chapter_05/genetic_algorithm_tournament.py)
+* [genetic_algorithm.py](/chapter_05/genetic_algorithm.py)
+* [send_more_money2.py](/chapter_05/send_more_money2.py)
+* [simple_equation_tournament.py](/chapter_05/simple_equation_tournament.py)
+* [simple_equation.py](/chapter_05/simple_equation.py)
