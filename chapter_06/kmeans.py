@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import TypeVar, Generic, List, Sequence
 from copy import deepcopy
 from functools import partial
-from random import uniform
+from random import uniform, choices
 from statistics import mean, pstdev
 from dataclasses import dataclass
 from data_point import DataPoint
@@ -24,17 +24,37 @@ class KMeans(Generic[Point]):
         points: List[Point]
         centroid: DataPoint
 
-    def __init__(self, k: int, points: List[Point]) -> None:
+    def __init__(self, k: int, points: List[Point], init:str="k-means++") -> None:
         if k < 1: # k-means can't do negative or zero clusters
             raise ValueError("k must be >= 1")
         self._points: List[Point] = points
         self._zscore_normalize()
         # initialize empty clusters with random centroids
         self._clusters: List[KMeans.Cluster] = []
+        if init == "k-means++":
+            self._kmeans_plusplus(k)
+        else:
+            self._random_assign(k)
+    
+    def _random_assign(self, k:int) -> None:
         for _ in range(k):
             rand_point: DataPoint = self._random_point()
             cluster: KMeans.Cluster = KMeans.Cluster([], rand_point)
             self._clusters.append(cluster)
+
+    def _kmeans_plusplus(self, k:int) -> None:
+        sq_distances = [1] * len(self._points)
+        for i in range(k):
+            if i == 0:
+                point: DataPoint = self._random_point()
+            else:
+                point: DataPoint = choices(self._points, weights=sq_distances, k=1).pop()
+            
+            cluster: KMeans.Cluster = KMeans.Cluster([], point)
+            self._clusters.append(cluster)
+            
+            fn_distance = partial(DataPoint.distance, point)
+            sq_distances = [fn_distance(p)**2 for p in self._points]
 
     @property
     def _centroids(self) -> List[DataPoint]:
